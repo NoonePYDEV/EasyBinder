@@ -54,7 +54,7 @@ From the source code, the program performs the following steps:
 
 ## Setup Script
 
-The project includes a `setup.bat` script intended to restore the .NET dependencies before building or using the tool, or run :
+The project includes a `Quick Setup.bat` script intended to restore the .NET dependencies before building or using the dotnet cli, run :
 
 ```
 dotnet restore
