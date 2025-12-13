@@ -47,7 +47,7 @@ namespace EasyBinder
                 {
                     Config.NoConsole = true;
                 }
-                else if (Arg.StartsWith("--workdir"))
+                else if (Arg.StartsWith("--workpath"))
                 {
                     Config.WorkDir = ArgsParser.GetArgumentValue(Arg);
                 }
@@ -55,7 +55,7 @@ namespace EasyBinder
                 {
                     Config.OutputDir = ArgsParser.GetArgumentValue(Arg);
                 }
-                else if (Arg.StartsWith("--bind-exe"))
+                else if (Arg.StartsWith("--bind-file"))
                 {
                     string ExePath = ArgsParser.GetArgumentValue(Arg);
 
@@ -172,4 +172,5 @@ namespace EasyBinder
             Logger.Success($"Compilation finished. Your binded payload is available in {Config.OutputDir}");
         }
     }
+
 }
